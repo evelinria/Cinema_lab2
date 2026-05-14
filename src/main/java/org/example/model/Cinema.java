@@ -2,7 +2,8 @@ package org.example.model;
 
 import java.util.Objects;
 
-public class Cinema {
+public class Cinema
+{
     private int id;
     private String name;
     private String address;
@@ -10,25 +11,27 @@ public class Cinema {
 
     public Cinema() {}
 
-    public Cinema(int id, String name, String address, int halls) {
-        this.id      = id;
-        this.name    = name;
+    public Cinema(int id, String name, String address, int halls)
+    {
+        this.id = id;
+        this.name = name;
         this.address = address;
-        this.halls   = halls;
+        this.halls = halls;
     }
 
-    public int    getId()      { return id; }
-    public String getName()    { return name; }
+    public int getId() { return id; }
+    public String getName() { return name; }
     public String getAddress() { return address; }
-    public int    getHalls()   { return halls; }
+    public int getHalls() { return halls; }
 
-    public void setId(int id)           { this.id      = id; }
-    public void setName(String name)    { this.name    = name; }
-    public void setAddress(String a)    { this.address = a; }
-    public void setHalls(int halls)     { this.halls   = halls; }
+    public void setId(int id) { this.id = id; }
+    public void setName(String name) { this.name = name; }
+    public void setAddress(String a) { this.address = a; }
+    public void setHalls(int halls) { this.halls = halls; }
 
     @Override
-    public boolean equals(Object o) {
+    public boolean equals(Object o)
+    {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Cinema c = (Cinema) o;
