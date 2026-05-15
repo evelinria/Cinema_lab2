@@ -39,7 +39,6 @@ public class Cinema
                 && Objects.equals(name, c.name)
                 && Objects.equals(address, c.address);
     }
-
     @Override public int hashCode() { return Objects.hash(id, name, address, halls); }
     @Override public String toString() { return "Cinema{id=" + id + ", name='" + name + "'}"; }
 }

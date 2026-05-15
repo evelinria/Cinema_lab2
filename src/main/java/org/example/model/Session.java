@@ -17,11 +17,8 @@ public class Session
 
     public Session() {}
 
-    public Session(int id, int cinemaId, String movieName,
-                   LocalDate sessionDate, LocalTime sessionTime, int hallNumber)
+    public Session(int id, int cinemaId, String movieName, LocalDate sessionDate, LocalTime sessionTime, int hallNumber)
     {
-        if (movieName == null || movieName.isBlank())
-            throw new IllegalArgumentException("Назва фільму не може бути порожньою.");
         this.id = id;
         this.cinemaId = cinemaId;
         this.movieName = movieName;

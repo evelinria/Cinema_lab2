@@ -19,12 +19,6 @@ public class Ticket
     public Ticket() {}
     public Ticket(int id, int sessionId, int rowNumber, int seatNumber, double price)
     {
-        if (rowNumber  < 1 || rowNumber  > 10)
-            throw new IllegalArgumentException("Ряд має бути від 1 до 10.");
-        if (seatNumber < 1 || seatNumber > 20)
-            throw new IllegalArgumentException("Місце має бути від 1 до 20.");
-        if (price <= 0)
-            throw new IllegalArgumentException("Ціна має бути більше 0.");
         this.id = id;
         this.sessionId = sessionId;
         this.rowNumber = rowNumber;
@@ -50,19 +44,14 @@ public class Ticket
     public void setSessionId(int sessionId) { this.sessionId = sessionId; }
     public void setRowNumber(int rowNumber)
     {
-        if (rowNumber < 1 || rowNumber > 10)
-            throw new IllegalArgumentException("Ряд має бути від 1 до 10.");
         this.rowNumber = rowNumber;
     }
     public void setSeatNumber(int seatNumber)
     {
-        if (seatNumber < 1 || seatNumber > 20)
-            throw new IllegalArgumentException("Місце має бути від 1 до 20.");
         this.seatNumber = seatNumber;
     }
     public void setPrice(double price)
     {
-        if (price <= 0) throw new IllegalArgumentException("Ціна має бути більше 0.");
         this.price = price;
     }
     public void setSold(boolean sold) { this.isSold = sold; }

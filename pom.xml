@@ -17,7 +17,6 @@
     </properties>
 
     <dependencies>
-        <!-- Jakarta Servlet API (Tomcat 10+) -->
         <dependency>
             <groupId>jakarta.servlet</groupId>
             <artifactId>jakarta.servlet-api</artifactId>
@@ -25,7 +24,6 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- Jakarta JSP API -->
         <dependency>
             <groupId>jakarta.servlet.jsp</groupId>
             <artifactId>jakarta.servlet.jsp-api</artifactId>
@@ -33,7 +31,6 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- JSTL -->
         <dependency>
             <groupId>jakarta.servlet.jsp.jstl</groupId>
             <artifactId>jakarta.servlet.jsp.jstl-api</artifactId>
@@ -45,7 +42,6 @@
             <version>3.0.1</version>
         </dependency>
 
-        <!-- PostgreSQL Driver -->
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
