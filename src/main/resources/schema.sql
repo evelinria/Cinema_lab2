@@ -1,0 +1,17 @@
+INSERT INTO tickets (session_id, row_number, seat_number, price, is_sold, owner_name) VALUES
+    (1, 1, 1,  150.00, TRUE,  'Іваненко Олег'),
+    (1, 1, 2,  150.00, TRUE,  'Петренко Марія'),
+    (1, 1, 3,  150.00, FALSE, NULL),
+    (1, 2, 1,  175.00, FALSE, NULL),
+    (1, 2, 2,  175.00, FALSE, NULL),
+    (2, 1, 1,  130.00, TRUE,  'Коваленко Іван'),
+    (2, 1, 2,  130.00, FALSE, NULL),
+    (2, 3, 5,  130.00, FALSE, NULL),
+    (3, 1, 1,  200.00, FALSE, NULL),
+    (3, 1, 2,  200.00, FALSE, NULL),
+    (3, 5, 10, 220.00, TRUE,  'Бондаренко Тетяна'),
+    (4, 1, 1,  160.00, FALSE, NULL),
+    (4, 2, 3,  160.00, TRUE,  'Мельник Сергій'),
+    (5, 1, 1,  190.00, FALSE, NULL),
+    (5, 1, 2,  190.00, FALSE, NULL),
+    (6, 1, 5,  140.00, FALSE, NULL);
